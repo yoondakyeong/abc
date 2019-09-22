@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+
+	<style type="text/css">
+		
+		#mybody{
+			overflow: hidden;
+		}
+	
+		#leetter{
+			text-align: center;
+			padding-top: 10%;
+		}
+		
+		#leetter img{
+			width: 365px;
+		}
+		#pic, .textc {
+			opacity: 0;
+			transition: all 1s;
+		}
+		.textc {
+			pointer-events: none;
+		}
+		#texti1{
+			position: absolute;
+			top: 0px;
+			left: 30px;
+			font-size: 50px;
+			transition: all 1s;
+		}
+		#texti2{
+			position: absolute;
+			top: 10px;
+			left: -100%;
+			font-size: 50px;
+			transition: left 8s;
+		}
+		#texti3{
+			position: absolute;
+			width: 100%;
+			top: 38%;
+			font-size: 30px;
+			text-align: center;
+			transition: all 1s;
+		}
+		#texti4{
+			position: absolute;
+			right: 50px;
+			top: 100px;
+			transition: all 1s;
+		}
+		#texti4 .textci{
+			width: 100px;
+		}
+		#texti5{
+			position: absolute;
+			transition: all 1s;
+		}
+	</style>
+</head>
+
+<body id="mybody">
+	<div></div>
+	<div id="leetter">
+		<img src="leett.png" class="nick" id="letter"><br>
+		<audio id="sound2" src="MLG.mp3" type="mp3" ></audio>
+	</div>
+
+
+<div id="pic">
+	<img src="1.gif" id="i1">
+	<img src="2.gif" id="i2">
+	<img src="3.gif" id="i3">
+	<img src="4.gif" id="i4">
+	<img src="5.gif" id="i5">
+</div>
+
+	<div id="texti">
+		<div id="texti1" class="textc" style=" color: #f6ff00;">
+			빵
+		</div>
+
+		<div id="texti2" class="textc" style=" color: #fa2626;">
+			꺄하하하하하하하꺄하하하하하하하하꺄하하하하하하하꺄하하하하하하하하꺄하하하하하하하꺄하하하하하하하하꺄하하하하하하하꺄하하하하하하하하꺄하하하하하하하꺄하하하하하하하하꺄하하하하
+		</div>
+
+		<div id="texti3" class="textc" style=" color: #00ff8a;">
+		음으--~----~`~음~~~~~--=~--~_--~<br>
+		~~~~00~~~----0-0~~~00~__<br>
+		~~~~~~~~~~~~******---
+		</div>
+
+		<div id="texti4" class="textc" style=" color: #ffffff;">
+			<img src="4.gif" class="textci">
+			<img src="4.gif" class="textci">
+			<img src="4.gif" class="textci">
+			<img src="4.gif" class="textci">
+			<img src="4.gif" class="textci">
+
+			<audio id="sound" src="bgm.mp3" type="mp3" loop></audio>
+		</div>
+
+		<div id="texti5" class="textc">
+			<audio id="sound3" src="know.mp3" type="mp3" ></audio>
+		</div>
+</div>
+
+<script type="text/javascript">
+	
+	letter.onclick = function(){
+			mybody.style.background = "url('click.png') no-repeat";
+			mybody.style.backgroundSize = "cover";
+			letter.style.display = "none";	
+			pic.style.opacity = "1";
+			sound2.play();
+			
+		}
+
+	i1.onclick = function(){
+		texti1.style.opacity = "1";
+		texti1.style.fontSize = "500px";
+		texti1.style.left = "150px";
+		texti1.style.top = "-50px";
+	}
+
+	i2.onclick = function(){
+		texti2.style.opacity = "1";
+		texti2.style.left= "100%";
+	}
+
+	i3.onclick = function(){
+		texti3.style.opacity = "1";
+		texti3.style.fontSize = "80px";
+	}
+
+	i4.onclick = function(){
+		texti4.style.opacity = "1";
+		sound.play();
+
+	}
+
+	i5.onclick = function(){
+		texti5.style.opacity = "1";
+		texti5.style.width = "500%";
+		mybody.style.backgroundSize = "300%"
+		sound3.play();
+	}
+
+</script>
+</body>
+</html>
